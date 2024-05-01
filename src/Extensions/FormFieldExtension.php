@@ -153,6 +153,6 @@ class FormFieldExtension extends Extension
      */
     public function getCalendarConfigJSON()
     {
-        return Convert::json_encode($this->owner->getCalendarConfig(), JSON_FORCE_OBJECT);
+        return json_encode($this->owner->getCalendarConfig(), JSON_FORCE_OBJECT);
     }
 }
